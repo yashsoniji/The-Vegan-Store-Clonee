@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+}
+
+nav img{
+  width: 36px;
+}
+
+.navright {
+  margin-top: 6px;
+}
+.navright > div {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.dropbtn {
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 15px;
+  line-height: 30px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.dropdown-content :nth-child(1) {
+  display: block;
+}
+.dropdown-content :nth-child(2) {
+  display: block;
+}
+.dropdown-content :nth-child(3) {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#buy{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #aad236;
+  border: 0;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.section-1 {
+  background-image: url('landing-background.png');
+  width: 100%;
+  height: 800px;
+  margin: 0;
+  text-align: center;
+}
+
+.text-on-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.text-on-image h3 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+}
+
+.text-on-image p {
+  font-size: 15px;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.446);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-on-image .text {
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+  top: 300px;
+}
+
+.section-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#card1 {
+  background-color: #5acda6;
+  width: 25%;
+  padding: 70px 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+#card1 i {
+  transition: transform 0.5s;
+  font-size: 90px;
+  padding: 20px;
+}
+#card1 h1 {
+  padding: 20px;
+}
+
+#card1 i:hover {
+  transform: scale(1.2);
+}
+
+#card2 {
+  background-color: #91ac41;
+  width: 25%;
+  padding: 70px 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+#card2 i {
+  transition: transform 0.5s;
+  font-size: 90px;
+  padding: 20px;
+}
+#card2 h1 {
+  padding: 20px;
+}
+#card2 i:hover {
+  transform: scale(1.2);
+}
+
+#card3 {
+  background-color: #e4b476;
+  width: 25%;
+  padding: 70px 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+#card3 i {
+  transition: transform 0.5s;
+  font-size: 90px;
+  padding: 20px;
+}
+#card3 h1 {
+  padding: 20px;
+}
+#card3 i:hover {
+  transform: scale(1.2);
+}
+
+#card4 {
+  background-color: #f69dad;
+  width: 25%;
+  padding: 70px 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+#card4 i {
+  transition: transform 0.5s;
+  font-size: 90px;
+  padding: 20px;
+}
+#card4 h1 {
+  padding: 20px;
+}
+
+#card4 i:hover {
+  transform: scale(1.2);
+}
+
+.section-3 {
+  height: 100%;
+  width: 100%;
+}
+
+.facility {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7eee2;
+}
+
+.store-name #fresh-food {
+  font-size: 25px;
+  font-family: 'Caveat', cursive;
+  color: rgb(79, 161, 79);
+}
+
+.store-name h5 {
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+}
+
+.store-name p {
+  color: rgba(0, 0, 0, 0.461);
+  padding: 5px;
+}
+
+.store-name {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 90px;
+}
+
+.store-facility {
+  display: flex;
+  width: 100%;
+}
+
+.fresh-vegetables {
+  width: 400px;
+  /* height: 300px; */
+  /* background-color: grey; */
+  padding: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.fresh-vegetables i {
+  background-color: #e3b375;
+  padding: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 55px;
+  transition: transform 0.5s;
+}
+
+.fresh-vegetables h3 {
+  font-size: 35px;
+}
+
+.fresh-vegetables p {
+  padding: 10px 0px;
+  opacity: 0.4;
+}
+
+.high-quality {
+  width: 400px;
+  /* height: 300px; */
+  /* background-color: grey; */
+  padding: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.high-quality i {
+  background-color: #e3b375;
+  padding: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 55px;
+  transition: transform 0.5s;
+}
+
+.high-quality h3 {
+  font-size: 35px;
+}
+
+.high-quality p {
+  padding: 10px 0px;
+  opacity: 0.4;
+}
+
+.sale {
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.sale i {
+  background-color: #e3b375;
+  padding: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 55px;
+  transition: transform 0.5s;
+}
+
+.sale h3 {
+  font-size: 35px;
+}
+
+.sale p {
+  padding: 10px 0px;
+  opacity: 0.4;
+}
+
+.best-price {
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.best-price i {
+  background-color: #e3b375;
+  padding: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 55px;
+  transition: transform 0.5s;
+}
+
+.best-price h3 {
+  font-size: 35px;
+}
+
+.best-price p {
+  padding: 10px 0px;
+  opacity: 0.4;
+}
+
+.fresh-vegetables i:hover {
+  transform: scale(1.1);
+}
+.sale i:hover {
+  transform: scale(1.1);
+}
+.best-price i:hover {
+  transform: scale(1.1);
+}
+.high-quality i:hover {
+  transform: scale(1.1);
+}
+
+.review {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-content h4 {
+  font-size: 25px;
+  font-family: 'Caveat', cursive;
+  color: rgb(79, 161, 79);
+}
+
+.review-content h5 {
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+}
+
+.review-content p {
+  color: rgba(0, 0, 0, 0.461);
+  padding: 5px;
+}
+
+.review-content {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 90px;
+}
+
+.review-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.review-card-1 {
+  margin: 10px;
+  width: 350px;
+  height: 550px;
+  background-color: #f5f6fb;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.review-card-1:hover {
+  box-shadow: 10px 0 6px -2px #888;
+}
+.review-card-2:hover {
+  box-shadow: 10px 0 6px -2px #888;
+}
+.review-card-3:hover {
+  box-shadow: 10px 0 6px -2px #888;
+}
+
+.review-img {
+  background-image: url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.review-text {
+  line-height: 23px;
+  word-spacing: 2px;
+  padding: 10px 75px;
+}
+
+.review-text p {
+  padding: 15px 0px;
+  opacity: 0.4;
+  font-size: 21px;
+}
+
+.review-text h5 {
+  font-size: 19px;
+}
+
+.review-card-2 {
+  width: 350px;
+  height: 550px;
+  background-color: #f5f6fb;
+  margin: 10px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+}
+
+.review-img-2 {
+  background-image: url('https://images.unsplash.com/photo-1618822520386-93f2474aeeb1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.review-text-2 {
+  line-height: 23px;
+  word-spacing: 2px;
+  padding: 10px 75px;
+}
+
+.review-text-2 p {
+  padding: 15px 0px;
+  opacity: 0.4;
+  font-size: 21px;
+}
+
+.review-text-2 h5 {
+  font-size: 19px;
+}
+
+.review-card-3 {
+  width: 350px;
+  height: 550px;
+  background-color: #f5f6fb;
+  margin: 10px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+}
+
+.review-img-3 {
+  background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.review-text-3 {
+  line-height: 23px;
+  word-spacing: 2px;
+  padding: 10px 75px;
+}
+
+.review-text-3 p {
+  padding: 15px 0px;
+  opacity: 0.4;
+  font-size: 21px;
+}
+
+.review-text-3 h5 {
+  font-size: 19px;
+}
+
+.reviewer {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-5 {
+  width: 100%;
+  /* height: 100%; */
+  margin-top: 150px;
+  display: flex;
+}
+
+.left-img-section {
+  width: 70%;
+}
+
+#staberry {
+  width: 100%;
+  height: 670px;
+}
+
+.right-follow-section {
+  background: url('https://souravsaraf2000.github.io/The-Vegan-Store/images/form2.png');
+  width: 40%;
+  background-size: cover;
+  text-align: left;
+
+  text-transform: capitalize;
+}
+
+.right-follow-section h1 {
+  font-size: 45px;
+  margin: 150px 80px 10px 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right-follow-section p {
+  margin: 10px 80px 60px 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.4;
+}
+.right-follow-section input {
+  margin: 10px 80px 00px 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 9px;
+}
+
+.right-follow-section input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.right-follow-section button {
+  margin: 10px 80px 00px 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f69dad;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.right-follow-section button:hover {
+  background-color: transparent;
+  border: 1px solid #f69dad;
+  color: #f69dad;
+}
+
+.section-6 {
+  height: 100%;
+  width: 100%;
+}
+
+.rank-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 90px;
+  background-color: #f6fcfa;
+}
+
+.rank-section h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.rank-section p {
+  font-style: italic;
+  padding: 10px;
+}
+
+.rank-text {
+  color: #3e8e41;
+  font-size: 18px;
+}
+
+.section-7 {
+  width: 100%;
+  height: 100%;
+}
+
+#section-7-contact {
+  text-transform:capitalize ;
+  display: flex;
+  justify-content:center;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+  padding:50px 0px;
+}
+
+#section-7-contact .contact-us{
+  width: 40%;
+}
+
+#section-7-contact .contact-us h4 {
+  font-family: 'Caveat', cursive;
+  color: #aad236;
+  font-size: 30px;
+  margin:0px 0px 30px 0px;
+}
+
+#section-7-contact .contact-us h1{
+  margin:10px 0px 25px 0px;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+#section-7-contact .contact-us p{
+  font-size: 18px;
+  opacity: 0.5;
+  margin:10px 0px 25px 0px;
+
+}
+
+#section-7-contact .contact-us h6{
+  font-size: 30px;
+  font-weight: 100;
+  margin:10px 0px 25px 0px;
+}
+
+#section-7-contact .meet-our-team{
+  width: 40%;
+  margin-right: -150px;
+}
+
+#section-7-contact .meet-our-team h2{
+  font-family: 'Caveat', cursive;
+  color: #aad236;
+  font-size: 30px;
+  margin:0px 0px 30px 0px;
+}
+
+#section-7-contact .meet-our-team h1{
+  font-size: 40px;
+  margin:0px 0px 15px 0px;
+}
+
+#section-7-contact .meet-our-team  p{
+  font-size: 18px;
+  opacity: 0.5;
+  margin:0px 0px 15px 0px;
+}
+
+
+#section-7-contact .meet-our-team input{
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 0.2px solid rgba(0, 0, 0, 0.467);
+  margin: 10px 0px;
+  font-size: 22px;
+}
+
+
+#section-7-contact .meet-our-team textarea{
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 0.2px solid black;
+  margin: 10px 0px;
+}
+
+#section-7-contact .meet-our-team button{
+  padding: 15px 30px;
+  border-radius: 5px ;
+  border: 0;
+  background-color:#aad236;
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+footer{
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+  padding: 26px;
+ 
+}
+
+footer h5{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
